@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Authorize | PostBook One Media Client</title>
+<!--PostBook Approved Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+html
+{
+  font-family: "Roboto", sans-serif;
+
+}
+h1
+{
+color:blue;
+}
+input
+{
+border-radius:1cm;
+width:12cm;
+height:1cm;
+}
+#alert
+{
+width:13cm;
+height:2.75cm;
+border-color:whitesmoke;
+background-color:red;
+border-radius:10px;
+color:white;
+display:none;
+float:center;
+  margin: 0 auto; /* Center the centered div within its parent */
+
+}
+</style>
+<script>
+function signin()
+{
+document.getElementById("alert").style.display = 'block';
+}
+</script>
+<body>
+<center>
+<h1>Authorize</h1>
+<h2>PostBook One Media</h2>
+<input type="text" value="" placeholder="Username" required>
+<input type="text" value="" placeholder="Password" required>
+<button  class="button-22" role="button" onclick="signin()">Sign In</button><br>
+
+</center>
+<div id="alert">
+<h3>Authentication Error <code>ID: 288</code></h3>
+<p>User does not have access to this area. Error: <code>USER_NET_RESTRICTED</code></p>
+<p>Think this is wrong? <a href="https://postbookonemedia.github.io/docs/err/288.html">Learn More</a></p>
+</div>
+<!-- HTML !-->
+
+<STYLE>
+.button-22 {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #1C84FF;
+}
+</STYLE>
+</body>
+</html>
